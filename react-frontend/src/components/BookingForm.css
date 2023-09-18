@@ -1,0 +1,85 @@
+.booking-form-popup {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.booking-form-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input {
+    margin-left: 10px;
+}
+
+.button-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.button-row button, .button-row .confirm-delete-yes, .button-row .confirm-delete-no {
+    flex: 1 0 0;
+}
+
+.delete-button {
+    background-color: #ff5050;
+}
+
+.delete-button:hover {
+    background-color: #ff1e1e;
+}
+
+.confirm-delete-no {
+    background-color: #50b0ff;
+    color: white;
+}
+
+.confirm-delete-no:hover {
+    background-color: #259dff;
+}
+
+.confirm-delete-yes {
+    background-color: #ff5050;
+    color: white;
+}
+
+.confirm-delete-yes:hover {
+    background-color: #ff1e1e;
+}
+
+.hidden-button {
+    display: none;
+}
+
+.confirm-delete-yes, .confirm-delete-no {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .booking-form-content {
+        max-width: 90%;
+    }
+}

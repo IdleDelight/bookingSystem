@@ -1,0 +1,23 @@
+.user {
+    padding: 10px 0px 10px 0px;
+}
+
+.user-cycler {
+    background-color: #d1d1d1;
+    color: #757575;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 3px;
+    width: 100%;
+    max-width: 680px;
+}
+
+.user-cycler:hover {
+    background-color: #b8b8b8;
+    color: #666666;
+}
